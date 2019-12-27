@@ -117,7 +117,6 @@ public class Main
 	}
 	private static void xuatSinhVien() 
 	{
-		System.out.print('\u000C');
 		System.out.println("Đây là danh sách sinh viên.");
 		for (int i=0; i<dsSinhVien.size();i++) 
 		{
