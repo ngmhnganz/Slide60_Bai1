@@ -18,7 +18,7 @@ public class Main
 		System.out.println("2. Xuất danh sách sinh viên. ");
 		System.out.println("3. Sửa sinh viên. ");
 		System.out.println("4. Xoá sinh viên chứa tên bất kỳ. ");
-		System.out.println("5. Xoá sinh viên chứa tên An. ");
+		System.out.println("5. Tìm sinh viên chứa tên An. ");
 		System.out.println("6. Sắp xếp sinh viên. ");
 		System.out.println("7. Xuất ra số lượng sinh viên. ");
 		String pick = sc.nextLine();
@@ -36,7 +36,7 @@ public class Main
 			xoaSinhVienBatKy();
 			break;
 		case "5":
-			xoaSinhVienAn();
+			timSinhVienAn();
 			break;
 		case "6":
 			sapXepSinhVien();
@@ -73,11 +73,10 @@ public class Main
 	}
 	private static void xuatSoLuongSinhVien() 
 	{
-		System.out.print('\u000C');
 		System.out.println("Số lượng sinh viên là: ");
 		System.out.print(dsSinhVien.size());
 	}
-	private static void xoaSinhVienAn() 
+	private static void timSinhVienAn() 
 	{
 		for (int i=0; i<dsSinhVien.size();i++) 
 		{
@@ -85,7 +84,7 @@ public class Main
 			sinhVien=dsSinhVien.get(i);
 			if (sinhVien.getTen().contains("An")) 
 			{
-				dsSinhVien.remove(i);
+				System.out.println(dsSinhVien.get(i));
 			}
 		}
 	}
