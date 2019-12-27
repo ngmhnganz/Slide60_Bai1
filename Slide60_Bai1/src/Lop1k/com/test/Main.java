@@ -56,7 +56,6 @@ public class Main
 		switch (pick) 
 		{
 		case 1:
-			System.out.print('\u000C');
 			dsSinhVien.sort(SinhVien.tenAZComparator);
 			for (int i=0; i<dsSinhVien.size();i++) 
 			{
@@ -64,7 +63,6 @@ public class Main
 			}
 			break ;
 		case 2:
-			System.out.print('\u000C');
 			dsSinhVien.sort(SinhVien.tenZAComparator);
 			for (int i=0; i<dsSinhVien.size();i++) 
 			{

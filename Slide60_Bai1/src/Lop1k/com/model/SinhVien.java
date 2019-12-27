@@ -33,6 +33,8 @@ public class SinhVien {
 	{
 		public int compare(SinhVien sinhVien1, SinhVien sinhVien2) 
 		{
+			// so sánh từ vị trí xuất hiện " " cuối cùng +1 : ví dụ Lê Minh thì sẽ lấy từ index=3.
+			// để lấy tên để xét thì cứ truy tới Lastindex(" ")+1 
 		return (int) (sinhVien1.getTen().substring(sinhVien1.getTen().lastIndexOf(" ")+1).compareTo(sinhVien2.getTen().substring(sinhVien2.getTen().lastIndexOf(" ")+1)));
 		}
 	};
